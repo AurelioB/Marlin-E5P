@@ -110,7 +110,7 @@
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 2
+#define SERIAL_PORT_2 0
 
 /**
  * This setting determines the communication speed of the printer.
@@ -757,7 +757,9 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 95 } // TODO: Test E0 for 93 & 95 steps
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 95 } // TODO: Test E0 for 93 & 95 steps
+
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 140 } // 140 esteps for dual gear extruder (red)
 
 /**
  * Default Max Feed Rate (mm/s)

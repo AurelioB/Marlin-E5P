@@ -719,7 +719,7 @@
   // If not defined, probe limits will be used.
   // Override with 'M422 S<index> X<pos> Y<pos>'
   //#define Z_STEPPER_ALIGN_XY { {  10, 190 }, { 100,  10 }, { 190, 190 } }
-  #define Z_STEPPER_ALIGN_XY { { 59.2, 160 }, { 310.8, 160 } } // https://github.com/DodgeDeBoulet/Marlin/blob/CrealityDwin2.0_Bleeding/Marlin/Configuration_adv.h#L764
+  //#define Z_STEPPER_ALIGN_XY { { 59.2, 160 }, { 310.8, 160 } } // https://github.com/DodgeDeBoulet/Marlin/blob/CrealityDwin2.0_Bleeding/Marlin/Configuration_adv.h#L764
 
   /**
    * Orientation for the automatically-calculated probe positions.
@@ -742,7 +742,7 @@
    *
    */
   #ifndef Z_STEPPER_ALIGN_XY
-    //#define Z_STEPPERS_ORIENTATION 0
+    #define Z_STEPPERS_ORIENTATION 0
   #endif
 
   // Provide Z stepper positions for more rapid convergence in bed alignment.
